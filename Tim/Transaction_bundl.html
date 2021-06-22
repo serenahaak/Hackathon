@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Transaction Bundle</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script 
+        type="text/javascript" 
+        src="https://unpkg.com/bsv@1.5.0/bsv.min.js">
+    </script>
+    
+  </head>
+  <body>
+      
+    <div id="block">
+        <h1 id="head">Raw transaction:</h1> 
+        <p id="text"></p>
+    </div>
+   
+    <script> 
+    var hdPrivateKey = bsv.HDPrivateKey.fromString("xprv9s21ZrQH143K3SQtKuwwebjnF5gduLFfLi8wDeGPwxhFbEV4TPs9XS3yCn6qAC9oheWU1Hh5WbYRkg8HJPxz9KwagEVaQVLJzhqrYw8szWJ")
+    var privateKeyStandard = hdPrivateKey.deriveChild("m/44'/0'/0'/0/0");
+    var privateKey = privateKeyStandard.privateKey;
+    
+    
+    
+    const utxo = new bsv.Transaction.UnspentOutput({
+    "address": "1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw",
+    "txid": "<e638c97a88707deb9cab1ce94a16d4e84b4e393f9ea9bd123abebd9c36d0955d>",
+    "vout": <4>,
+    "satoshis": <1>,
+    "scriptPubKey": "<76a9144c4fd4e6de74dc412094890013aa48eea14de04c88ac>",
+  });
+    
+    const transaction = new bsv.Transaction()
+    .from(utxo)
+    .to('1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw', 1000)
+    .change('1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw')
+    .sign(privateKey)
+        
+    var p = document.querySelector("#text");
+    p.innerHTML = transaction.toString();
+     </script>
+  </body>
+</html>
