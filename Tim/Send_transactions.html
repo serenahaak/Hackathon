@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Send transaction to miner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://unpkg.com/bsv@1.5.0/bsv.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src='https://unpkg.com/filepay@2.0.3/dist/filepay.min.js'></script>
+ </head>
+    <body>
+     <div id="block2">
+        <h1 id="title">Raw transaction:</h1>
+        <p id="res1"></p>
+     </div>
+     <div id="block">
+        <h1 id="title">TAAL response:</h1>
+        <p id="res"></p>
+     </div>
+     
+        
+    <script>
+    
+    var hdPrivateKey = bsv.HDPrivateKey.fromString("{@privatekey}");
+    var privateKeyStandard = hdPrivateKey.
+    deriveChild("m/44'/0'/0'/0/0");
+    var privateKey = privateKeyStandard.privateKey;
+        
+        
+    const utxo = new bsv.Transaction.UnspentOutput({
+    "address": "1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw",
+    "txid":"<txid>",
+    "vout": <vout>,
+    "satoshis": <amount>,
+    "scriptPubKey": "<scriptPubKey>",
+  });
+    
+    const transaction = new bsv.Transaction()
+    .from(utxo)
+    .to('1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw', 1000)
+    .change('1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw')
+    .sign(privateKey)
+    
+    var p = document.querySelector("#res1");
+    p.innerHTML = transaction.toString();    
+    
+    var rawTX = "<rawTX>";
+    
+    const pushTx = async () => {
+    const res = await axios.post(
+       "https://merchantapi.taal.com/mapi/tx",
+      { rawtx: rawTX },
+      {
+        headers: {
+          "content-type": "application/json"
+        }
+      }
+    );
+    let txData = res.data;
+    let txid = txData.payload;
+    let p = document.querySelector("#res");
+    p.innerHTML = txid;
+    };
+    
+    // pushTx();
+
+           
+    </script>
+    </body>
+    
+</html>

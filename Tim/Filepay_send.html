@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Block Data Request</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+    <script type="text/javascript" src="https://unpkg.com/bsv@1.5.0/bsv.min.js">
+    </script>
+    <script src='https://unpkg.com/filepay@2.0.3/dist/filepay.min.js'></script>
+
+    </head>
+    <body>
+     <div id="block">
+      <h1 id="title">Raw Transaction:</h1>
+      <p id="privText"></p>
+     </div>
+        
+    <script>
+        
+    var hdPrivateKey = bsv.HDPrivateKey.fromString
+    ("xprv9s21ZrQH143K3SQtKuwwebjnF5gduLFfLi8wDeGPwxhFbEV4TPs9XS3yCn6qAC9oheWU1Hh5WbYRkg8HJPxz9KwagEVaQVLJzhqrYw8szWJ");
+    
+    var privateKeyStandard = hdPrivateKey.
+    deriveChild("m/44'/0'/0'/0/0");
+    
+    var privateKey = privateKeyStandard.privateKey;
+ 
+    var config = {
+       safe: true,
+       data: ["0x6d02", "Transaction Send"],
+       pay: {
+        key: privateKey,
+        rpc: "https://api.mattercloud.net",
+        feeb: 0.5,
+        to: [{
+         address: "1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw",
+         value: 1000
+        }]
+       }
+    }
+  
+ 
+ filepay.send(config, function(err, res, fee, rawtx) {
+  
+        let p = document.querySelector("#privText");
+        p.innerHTML = res
+    })
+   
+    </script>
+    </body>
+</html>

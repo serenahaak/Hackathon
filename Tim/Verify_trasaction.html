@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Block Data Request</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <script type="text/javascript" src="https://unpkg.com/bsv@1.5.0/bsv.min.js">
+        </script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    </head>
+    <body>
+        <div id='block'>
+            <h1 id='title'>TAAL Transaction Status:</h1>
+            <p id="res"></p>
+        </div>
+        
+        <script>
+        
+            var config = {
+                method: 'get',
+                url: "https://merchantapi.taal.com/mapi/tx/<TransactionIDHere>"
+
+            };
+
+            axios(config)
+            .then((response) => {
+                let data = JSON.stringify(response.data);
+                let p = document.querySelector("#res");
+                p.innerHTML = data;
+            })
+           
+        </script>
+        
+
+    </body>
+    
+    
+</html>
