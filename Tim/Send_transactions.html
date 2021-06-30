@@ -22,30 +22,30 @@
         
     <script>
     
-    var hdPrivateKey = bsv.HDPrivateKey.fromString("{@privatekey}");
+    var hdPrivateKey = bsv.HDPrivateKey.fromString("xprv9s21ZrQH143K3SQtKuwwebjnF5gduLFfLi8wDeGPwxhFbEV4TPs9XS3yCn6qAC9oheWU1Hh5WbYRkg8HJPxz9KwagEVaQVLJzhqrYw8szWJ");
     var privateKeyStandard = hdPrivateKey.
     deriveChild("m/44'/0'/0'/0/0");
     var privateKey = privateKeyStandard.privateKey;
         
         
     const utxo = new bsv.Transaction.UnspentOutput({
-    "address": "1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw",
-    "txid":"<txid>",
-    "vout": <vout>,
-    "satoshis": <amount>,
-    "scriptPubKey": "<scriptPubKey>",
+    "address": "17xVzNzmbcEjNZavU1RXzPfx9WSymUrQuz",
+    "txid":"285a67cf4e94d3a743853a1a532ba492428b013439b39da4a6536e6f01438b4d",
+    "vout": 2,
+    "satoshis": 647535,
+    "scriptPubKey": "76a9144c4fd4e6de74dc412094890013aa48eea14de04c88ac",
   });
     
     const transaction = new bsv.Transaction()
     .from(utxo)
-    .to('1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw', 1000)
-    .change('1BoUFgA8ZnSFxARg9BgrXgmtZLj2ssrYuw')
+    .to('18HNFy5v2fcQpxZk7n7YMT3b1eXtuUwbCa', 1000)
+    .change('18HNFy5v2fcQpxZk7n7YMT3b1eXtuUwbCa')
     .sign(privateKey)
     
     var p = document.querySelector("#res1");
     p.innerHTML = transaction.toString();    
     
-    var rawTX = "<rawTX>";
+    var rawTX = "01000000014d8b43016f6e53a6a49db33934018b4292a42b531a3a8543a7d3944ecf675a28020000006b483045022100f00f715f2177f8fb0f7ce795f1e0b4bceb982ab7fbbfdd50a107ecd39897007102206ef98d86b21c914d69a9637e5cbd85c3c685f529cb2504f2b9338d24aa3e28b34121023f3f6dc602cec6098adc2709d2a5e82021c572c9c1cfd13b81ad64f439c1758bffffffff02e8030000000000001976a9144fe147fce638d1dfa7f2e4e66d157b722ef3b95388ac16dd0900000000001976a9144fe147fce638d1dfa7f2e4e66d157b722ef3b95388ac00000000";
     
     const pushTx = async () => {
     const res = await axios.post(
@@ -63,7 +63,7 @@
     p.innerHTML = txid;
     };
     
-    // pushTx();
+    //pushTx();
 
            
     </script>
