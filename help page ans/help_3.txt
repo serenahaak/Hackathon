@@ -1,0 +1,3 @@
+1.	Please check your input (private key, address and amount) are under the correct specification. 
+2.	We only accept BSV addresses and translations within the Bitcoin SV network. 
+3.	We recommended the transaction of BSV amount should more than 400 Satoshi, too a lower amount might cause an issue. 

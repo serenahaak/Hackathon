@@ -1,0 +1,5 @@
+1.	When using <our app name> with sites
+<our app name> keeps your wallet data private unless you authorize permission to share your account address.  
+
+2.	When using <our app name> for transactions
+Transactions made using <our app name> are registered on the Bitcoin SV blockchain and are publicly available. If someone knows your account address, they can see the transaction is made by you because accounts on the Bitcoin SV network are pseudonymous.
