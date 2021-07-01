@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Send Request</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+    <script type="text/javascript" src="https://unpkg.com/bsv@1.5.0/bsv.min.js">
+    </script>
+    <script src='https://unpkg.com/filepay@2.0.3/dist/filepay.min.js'></script>
+
+    </head>
+
+    <body>
+     <div id="block">
+      <h1 id="title">Send A Transaction</h1>
+      <p id="privText"></p>
+     </div>
+ 
+     Your Private Key:
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="fromtoText"
+                  value=""
+                  style="
+                  width: 580px;
+                  height: 20px;
+                  border: 1px solid #000000"
+                  />
+              </div>
+          </div>
+          <br>
+     
+     Address:
+            <form id="sendTo" style="width: 100%" action="">
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="sendToText"
+                  style="word-wrap: break-word"
+                  value=""
+                  />
+              </div>
+            </form>
+          </div>
+          
+          <br>
+
+    Amount: (BSV, Satoshi)
+            <form id="amount " action="" style="width: 100%">
+              <div class="input-container">
+                <input
+                  onsubmit="return false"
+                  oninput=""
+                  type="text"
+                  id="amountText"
+                  style="word-wrap: break-word"
+                  value=""
+                  />
+              </div>
+            </form>
+          </div>
+         
+        
+      
+          <br>
+        <button
+            style="display: inline-block; width: 16%"
+            id="sendTransaction"
+            onclick="sentFunction()"
+          >
+          Sent
+        </button>
+          
+
+        <script>
+            var from_input, sent_input, amount_input 
+            function sentFunction() {
+                from_input = document.getElementById("fromtoText").value;
+                sent_input = document.getElementById("sendToText").value;
+                amount_input = document.getElementById("amountText").value;
+                amount_input = parseInt(amount_input);
+                var hdPrivateKey = bsv.HDPrivateKey.fromString(from_input);
+                var privateKeyStandard = hdPrivateKey.deriveChild("m/44'/0'/0'/0/0");
+                var privateKey = privateKeyStandard.privateKey;
+                var config = {
+                    safe: true,
+                    data: ["0x6d02", "Transaction Send"],
+                    pay: {
+                        key: privateKey,
+                        rpc: "https://api.mattercloud.net",
+                        feeb: 0.5,
+                        to: [{
+                            address: sent_input,
+                            value: amount_input
+                        }]
+                    }
+                }
+           filepay.send(config, function(err, res, fee, rawtx) {
+               let p = document.querySelector("#privText");
+               p.innerHTML = res
+            })
+            }
+
+            
+            //Private_Key_funtion
+            function Frominput() {
+                var from_input = document.getElementById("fromtoText").value;
+                window.alert(from_input);
+            }
+
+
+        </script>
+
+        </body>
+    
+    
+</html>
