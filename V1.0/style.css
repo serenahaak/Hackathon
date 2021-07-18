@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+
+body {
+    font-family: "Rubik";
+    
+
+
+
+    margin:0;
+        
+    padding:0;
+        
+        
+        
+        
+}
+
+.nav-container {
+    position: absolute;
+    width: 375px;
+    height: 78px;
+    left: 20px;
+    top: 566px;
+    
+    border: 1px solid #060606;
+
+}
+.wrapper {
+
+    max-width:  1200px;
+    margin: 0 auto;
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space between;
+    
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    float: left;
+
+
+    
+
+}
+.nav-items img:hover {
+    transform: rotate(3deg)
+    
+
+}
+.bitcoin-icon {
+
+    position: absolute;
+width: 45px;
+height: 45px;
+left: 165px;
+top: 0px;
+}
+
+.logo{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 22px;
+    
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.user {
+    position: absolute;
+width: 293px;
+height: 33px;
+left: 41px;
+top: 144px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+
+color: #EAB300;
+
+
+text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cb {
+    position: absolute;
+width: 242px;
+height: 33px;
+left: 66px;
+top: 202px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 31px;
+text-align: center;
+
+color: #000000;
+}
+
+.pounds{
+    position: absolute;
+width: 128px;
+height: 51px;
+left: 23px;
+top: 259px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 43px;
+text-align: center;
+
+color: #000000;
+
+}
+.conversion-icon {
+    position: absolute;
+    
+    width: 24px;
+    height: 19px;
+    left: 175px;
+    top: 274px;
+    
+}
+.bit{
+    position: absolute;
+width: 83px;
+height: 43px;
+left: 223px;
+top: 259px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 43px;
+/* identical to box height */
+
+text-align: center;
+}
+
+.liveconversion {
+    position: absolute;
+width: 70px;
+height: 12px;
+left: 152px;
+top: 315px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+line-height: 11px;
+text-align: center;
+
+color: #000000;
+
+}
+
+.block-3 {
+position: absolute;
+width: 110px;
+height: 108px;
+left: 105px;
+top: 300px;
+transform: scale(0.4);
+
+}
+
+.block-2 {
+    position: absolute;
+width: 166px;
+height: 15px;
+left: 78px;
+top: 441px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+}
+
+.paybutton {
+position: absolute;
+width: 233px;
+height: 30px;
+left: 71px;
+top: 456px;
+
+background: #EAB300;
+box-shadow: 8px 7px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+
+
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #000000;
+}
+
+.recievebutton {
+position: absolute;
+width: 233px;
+height: 30px;
+left: 71px;
+top: 511px;
+
+background: #EAB300;
+box-shadow: 8px 7px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #000000;
+
+}
+
+.recievebutton:hover{
+        background-color: yellow;
+}
+.paybutton:hover {
+   
+        background-color: yellow;
+}
+.GDP{
+    position: absolute;
+width: 55px;
+height: 18px;
+left: 48px;
+top: 314px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #EAB300;
+
+}
+
+.BSV{
+    position: absolute;
+width: 55px;
+height: 18px;
+left: 271px;
+top: 315px;
+
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #EAB300;
+
+}
