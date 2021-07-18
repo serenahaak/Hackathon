@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+
+body {
+    font-family: "Rubik";
+    
+
+
+
+    margin:0;
+        
+    padding:0;
+        
+        
+        
+        
+}
+
+
+
+.bitcoin-icon {
+
+    position: absolute;
+width: 45px;
+height: 45px;
+left: 165px;
+top: 0px;
+}
+
+.logo{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 22px;
+    
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.goback {
+    position: absolute;
+    width: 233px;
+    height: 30px;
+    left: 71px;
+    top: 511px;
+    
+    background: #EAB300;
+    box-shadow: 8px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+    
+    }
+
+    .nav-container {
+        position: absolute;
+        width: 375px;
+        height: 78px;
+        left: 20px;
+        top: 566px;
+        
+        border: 1px solid #060606;
+    
+    }
+    .wrapper {
+    
+        max-width:  1200px;
+        margin: 0 auto;
+    }
+    
+    nav{
+        
+        display: flex;
+        justify-content: space between;
+        
+    }
+    
+    .nav-items {
+        display: flex;
+        list-style-type: none;
+        float: left;
+    
+    
+        
+    
+    }
+    .nav-items img:hover {
+        transform: rotate(3deg)
+        
+    
+    }
+    .goback:hover {
+   
+        background-color: yellow;
+}
+.settingshelp{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 220px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.settingslogo{
+    position: absolute;
+    left: 155px;
+    top: 130px;
+}
+.settingshelp:hover {
+   
+    background-color: yellow;
+}
+.allowcontacts{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 280px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.allowcontacts:hover {
+   
+    background-color: yellow;
+}
+.language{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 340px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.language:hover {
+   
+    background-color: yellow;
+}
+.currency{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 400px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.currency:hover {
+   
+    background-color: yellow;
+}
+
+.help1{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 220px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.help1:hover {
+   
+    background-color: yellow;
+}
+.help2{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 280px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.help2:hover {
+   
+    background-color: yellow;
+}
+
+.help3{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 160px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.help3:hover {
+   
+    background-color: yellow;
+}
+
+.help4{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 340px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.help4:hover {
+   
+    background-color: yellow;
+}
+
+.help5{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 400px;
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background: #EAB300;
+
+    color: #000000;
+    
+    
+
+}
+.help5:hover {
+   
+    background-color: yellow;
+}
+.goback1 {
+    position: absolute;
+    width: 233px;
+    height: 30px;
+    left: 71px;
+    top: 511px;
+    
+    background: #EAB300;
+    box-shadow: 8px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+    
+    }
+
+    .goback1:hover {
+   
+        background-color: yellow;
+    }

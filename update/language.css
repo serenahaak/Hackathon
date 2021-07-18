@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+
+body {
+    font-family: "Rubik";
+    
+
+
+
+    margin:0;
+        
+    padding:0;
+        
+        
+        
+        
+}
+
+
+
+.bitcoin-icon {
+
+    position: absolute;
+width: 45px;
+height: 45px;
+left: 165px;
+top: 0px;
+}
+
+.logo{
+    position: absolute;
+    width: 224px;
+    height: 48px;
+    left: 75px;
+    top: 22px;
+    
+    font-family: Rounded Mplus 1c Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.goback {
+    position: absolute;
+    width: 233px;
+    height: 30px;
+    left: 71px;
+    top: 511px;
+    
+    background: #EAB300;
+    box-shadow: 8px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+    
+    }
+
+    .nav-container {
+        position: absolute;
+        width: 375px;
+        height: 78px;
+        left: 20px;
+        top: 566px;
+        
+        border: 1px solid #060606;
+    
+    }
+    .wrapper {
+    
+        max-width:  1200px;
+        margin: 0 auto;
+    }
+    
+    nav{
+        
+        display: flex;
+        justify-content: space between;
+        
+    }
+    
+    .nav-items {
+        display: flex;
+        list-style-type: none;
+        float: left;
+    
+    
+        
+    
+    }
+    .nav-items img:hover {
+        transform: rotate(3deg)
+        
+    
+    }
+    .goback:hover {
+   
+        background-color: yellow;
+}
+.goback1 {
+    position: absolute;
+    width: 233px;
+    height: 30px;
+    left: 71px;
+    top: 511px;
+    
+    background: #EAB300;
+    box-shadow: 8px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #000000;
+    
+    }
+
+
+/* The switch - the box around the slider */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    left: 300px;
+    top: 180px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eab300;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .sl{
+      position:absolute
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 29px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ccc;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(-26px);
+    -ms-transform: translateX(-26px);
+    transform: translateX(-26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .h1{
+      position:absolute;
+      left:90px;
+      top: 120px;
+      font-size: 28px;
+  }
+  .h2{
+      position: absolute;
+      left:70px;
+      top: 183px;
+      font-size: 24px;
+  }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Charts</title>
+  <link rel="stylesheet" href="./Price_Chart_style.css">
+
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500&display=swap" rel="stylesheet">
+    <title>Price Chart</title>
+</head>
+
+<body>
+  <container class="container">
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                
+                <ul class="nav-items">
+                    <li>
+                        <a href="index.php"> <img src="home.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="transactions.html"><img src="transactions.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="notif.php"><img src="notif.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="settings.html"><img src="settings.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="login.php"><img src="logout.svg" alt=""></a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="div1">
+
+    <img class = "bitcoin-icon" src="bitcoin-btn.svg" alt="">
+                
+    <h1 class="logo">Logo</h1>
+    <cards class="cards">
+        
+        <bsv style="width: 30%" class="bsv">
+            <card class="asset-info">
+                <div class="title">
+                    <img src="bitcoinsv-logo.svg" width="120">
+                    
+                </div>
+                <div class="details">
+                    <h2 class="asset-price" id="bsvPrice"></h2>
+                </div>
+            </card>
+            <canvas id="bsvChart"></canvas>
+        </bsv>
+
+
+        <bitcoin style="width: 30%" class="btc">
+            <card class="asset-info">
+                <div class="title">
+                    <img src="btc.svg" width="15%"> 
+                    <h1>Bitcoin</h1>
+                </div>
+                <div class="details">
+                    <h2 class="asset-price" id="btcPrice"></h2>
+                </div>
+            </card>
+            <canvas id="btcChart"></canvas>
+        </bitcoin>
+
+
+
+        <ethereum style="width: 30%" class="ethereum">
+            <card class="asset-info">
+                <div class="title">
+                    <img src="eth.svg" width="10%"> 
+                    <h1>Ethereum</h1>
+                </div>
+                <div class="details">
+                    <h2 class="asset-price" id="ethPrice"></h2>
+                </div>
+            </card>
+            <canvas id="ethereumChart"></canvas>
+        </ethereum>
+
+
+
+ 
+        <button class="goback1" onclick="goBack()">Back</button>
+        <script>
+            function goBack() {
+              window.history.back();
+            }
+            </script>
+
+        
+
+
+    </div>   
+    </cards>
+  </container>
+</body>
+
+</html>
+  <script  src="./Price_chart_script.js"></script>
+</body>
+</html>
+
+
+

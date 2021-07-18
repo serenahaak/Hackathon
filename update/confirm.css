@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+.back{
+position: absolute;
+width: 375px;
+height: 667px;
+left: 0px;
+top: 0px;
+
+background: #3EB912;
+box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 10px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 45px;
+}
+
+.sent{
+
+position: absolute;
+width: 256px;
+height: 52px;
+left: 59px;
+top: 403px;
+
+font-family: Rounded Mplus 1c Bold;
+font-style: normal;
+font-weight: bold;
+font-size: 96px;
+line-height: 143px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.circle{
+    border-radius: 50%;
+
+    position: absolute;
+width: 176px;
+height: 169px;
+left: 95px;
+top: 234px;
+
+background: #FFFFFF;
+}
+
+.tick{
+    position: absolute;
+width: 19px;
+height: 102.82px;
+left: 184.29px;
+top: 280px;
+
+background: #3EB912;
+transform: rotate(37.71deg);
+
+}
+
+.tick2{
+    position: absolute;
+width: 19.46px;
+height: 50.97px;
+left: 141.71px;
+top: 327.14px;
+
+background: #3EB912;
+transform: rotate(-51.06deg);
+}

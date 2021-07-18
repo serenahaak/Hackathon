@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Help</title>
+    <link rel="stylesheet" href="payment.css">
+
+</head>
+<body>
+        <div class="nav-container">
+            <div class="wrapper">
+                <nav>
+                    
+                    <ul class="nav-items">
+                        <li>
+                            <a href="index.php"> <img src="home.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="transactions.html"><img src="transactions.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="notif.php"><img src="notif.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="settings.html"><img src="settings.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="login.php"><img src="logout.svg" alt=""></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <img class = "bitcoin-icon" src="bitcoin-btn.svg" alt="">
+                    
+        <h1 class="logo">Logo</h1>
+        <h1 class="title">My Payment Hasn't Gone Through</h1>
+    <p class="p1">
+</p>
+<br>
+<br>
+<p class="p2">
+
+1.	Please check your input are under the correct specification. A minimum transaction value of 1000 Satoshi’s is required for a transaction to be processed.
+<br><br>
+2.	We only accept BSV addresses and translations within the Bitcoin SV network. 
+<br><br>
+3.	Please check you have the correct amount of confirmed funds to ensure the transaction goes through.
+<br><br>
+4.	Please check the wallet address you have entered is correct. This can be done by finding the wallet address on whats on chain.
+
+
+</p>
+<button class="goback1" onclick="goBack()">Back</button>
+<script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+</html>

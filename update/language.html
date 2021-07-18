@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+    <link rel="stylesheet" href="language.css">
+
+</head>
+<body>
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                
+                <ul class="nav-items">
+                    <li>
+                        <a href="index.php"> <img src="home.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="transactions.html"><img src="transactions.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="notif.php"><img src="notif.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="settings.html"><img src="settings.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="login.php"><img src="logout.svg" alt=""></a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+     <div class= "titlepage">
+     <img class = "bitcoin-icon" src="bitcoin-btn.svg" alt="">
+     <h1 class="logo">Logo</h1>
+     </div>
+     <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <h3 class="h1">Select Language</h3>
+      <h2 class = "h2">English</h2>
+      <button class="goback" onclick="goBack()">Back</button>
+     <script>
+     function goBack() {
+       window.history.back();
+     }
+     </script>
+</body>
+</html>
