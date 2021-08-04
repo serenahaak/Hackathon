@@ -6,26 +6,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Query</title>
 </head>
 
 <body>
-    <button class="trigger">Click here to check your transaction!</button>
+    
+</div>
+            
+
+    <button class="trigger">Click here to exolore your transaction</button>
     <div class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <h1>let's go WhatsOnChain:</h1>
+            <h1>let's go WhatsOnChain</h1>
+            <h3>Copy your address first:<form>
+                <imput
+                class="uk-margin-small-right iconRight"
+                uk-icon="copy"
+                id="copyHdprivate"
+                onclick="copyHD()"
+                style="cursor: pointer"/>
+                <svg width="20" 
+              height="20" 
+              viewBox="0 0 20 20" 
+              xmlns="http://www.w3.org/2000/svg">
+              <rect 
+              fill="none" 
+              stroke="#000" 
+              x="3.5" 
+              y="2.5" 
+              width="12" 
+              height="16">
+            </rect>
+            <polyline 
+            fill="none" 
+            stroke="#000" 
+            points="5 0.5 17.5 0.5 17.5 17">
+        </polyline>
+        ></span>
+    </svg>
+            </form></h3>
             
-                <h2>https://whatsonchain.com/</h2>
+            <form>
+                <input 
+                class="MyButton";
+                type="button";
+                value="GO";
+                onclick="window.location.href='https://whatsonchain.com/'" />
+            </form>
             
-            <h3>(It required your Address)</h3>
         </div>
     </div>
 
 
-</body>
-
 <script>
+    function copyHD() {
+        var copyText = hdPrivateKeyText;
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        Swal.fire("", "Addres Copied!", "success");
+      }
+
+
+
+
     const modal = document.querySelector(".modal");
     const trigger = document.querySelector(".trigger");
     const closeButton = document.querySelector(".close-button");
@@ -39,12 +84,12 @@
             toggleModal();
         }
     }
-
     trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
 	
 </script>
 
+</body>
 
 </html>
