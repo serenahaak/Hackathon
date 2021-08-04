@@ -124,19 +124,26 @@ cards {
   grid-template-columns: 1fr;
   grid-template-rows: minmax(50px, 60px) 1fr;
   grid-template: "info" "chart";
-  border-radius: 60px;
+  border-radius: 6px;
 }
 
 .btc {
   box-shadow: 10px 10px 20px 1px rgba(247, 147, 26, 0.15);
+  padding: 0rem;
+  margin-bottom: 2rem;
+}
 }
 
 .bsv {
-  box-shadow: 10px 10px 20px 1px rgba(72, 71, 46, 0.15);
+  box-shadow: 10px 10px 20px 1px rgba(202, 199, 113, 0.15);
+  padding: 0rem;
+  margin-bottom: 2rem;
 }
 
 .ethereum {
   box-shadow: 10px 10px 20px 1px rgba(78, 56, 216, 0.15);
+  padding: 0rem;
+  margin-bottom: 2rem;
 }
 
 .asset-info {

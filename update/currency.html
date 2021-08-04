@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Currency Charts</title>
-  <link rel="stylesheet" href="./Price_Chart_style.css">
+  <link rel="stylesheet" href="Price_Chart_style.css">
 
 </head>
 <body>
@@ -53,10 +53,11 @@
     <h1 class="logo">Logo</h1>
     <cards class="cards">
         
-        <bsv style="width: 30%" class="bsv">
+        <bsv style="width: 300%" class="bsv">
             <card class="asset-info">
                 <div class="title">
-                    <img src="bitcoinsv-logo.svg" width="120">
+                    <img src="bitcoinsv-logo.svg" width="110">
+                    <h1></h1>
                     
                 </div>
                 <div class="details">
@@ -65,13 +66,14 @@
             </card>
             <canvas id="bsvChart"></canvas>
         </bsv>
+        
 
 
-        <bitcoin style="width: 30%" class="btc">
+        <bitcoin style="width: 300%" class="btc">
             <card class="asset-info">
                 <div class="title">
-                    <img src="btc.svg" width="15%"> 
-                    <h1>Bitcoin</h1>
+                    <img src="BTC.png" width="110"> 
+                    <h1></h1>
                 </div>
                 <div class="details">
                     <h2 class="asset-price" id="btcPrice"></h2>
@@ -82,10 +84,10 @@
 
 
 
-        <ethereum style="width: 30%" class="ethereum">
+        <ethereum style="width: 300%" class="ethereum">
             <card class="asset-info">
                 <div class="title">
-                    <img src="eth.svg" width="10%"> 
+                    <img src="./eth.svg" width="10%"> 
                     <h1>Ethereum</h1>
                 </div>
                 <div class="details">
@@ -95,20 +97,10 @@
             <canvas id="ethereumChart"></canvas>
         </ethereum>
 
-
-
- 
-        <button class="goback1" onclick="goBack()">Back</button>
-        <script>
-            function goBack() {
-              window.history.back();
-            }
-            </script>
-
-        
-
+        <h6>live data provided by CryptoCompare.com and @diggidydoge</h6>
 
     </div>   
+   
     </cards>
   </container>
 </body>
